@@ -15,8 +15,29 @@
   position: relative;
 }
 
-.piece {
+.playPiece {
   height: 12.5%;  
+  position: absolute;
+  z-index: 1;
+  transition: box-shadow 0.3s ease;
+}
+
+.playPiece:hover {
+  height: 12.5%;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 0 10px 5px rgba(238, 255, 0, 0.9);
+  transition: box-shadow 0.1s ease;
+}
+
+.oppPiece{
+  height: 12.5%;
+  position: absolute;
+  z-index: 1;
+}
+
+.pieceHover{
+  height: 14%;
   position: absolute;
   z-index: 1;
 }
